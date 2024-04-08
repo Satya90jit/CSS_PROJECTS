@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+
+/*--------------------------------------[ NAVIGATION BAR ]--------------------------------------*/
+
+body {
+    background-color: #efefef;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(90, 140, 232);
+    padding: 1px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+}
+
+.logo {
+    width: 130px;
+    margin-right: 45px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-left ul li img {
+    width: 28px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.nav-user-icon img {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-user-icon {
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+.search-box {
+    background-color: #efefef;
+    width: 3z50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 35px;
+}
+
+.search-box img {
+    width: 18px;
+    margin-left: -2px;
+    margin-top: 2px;
+}
+
+.search-box input {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    border: 0;
+    outline: none;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+.left-side-bar {
+    /* background-color: #cbdffa; */
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    height: 100vh;
+}
+
+.right-side-bar {
+    /* background-color: #cbdffa; */
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    /* height: 100vh; */
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    color: #626262;
+}
+
+.main-content {
+    flex-basis: 47%;
+}
+
+.imp-links a,
+.shortcut-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+
+.imp-links a img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.imp-links a:last-child {
+    color: rgb(90, 140, 232);
+}
+
+.imp-links {
+    border-bottom: 1px solid #ccc;
+}
+
+.shortcut-links a img {
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.shortcut-links p {
+    margin: 25px 0px;
+    color: #626262;
+    font-weight: 500;
+}
+
+
+/* .left-side-bar {
+    /* border-right: 1px solid rgb(216, 212, 212); */
+
+
+/* padding: 22px; */
+
+*/ .side-bar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.side-bar-title h4 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.side-bar-title a {
+    text-decoration: none;
+    color: rgb(90, 140, 232);
+    font-size: 12px;
+}
+
+.events {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.left-event {
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.events p {
+    font-size: 12px;
+}
+
+.events a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(90, 140, 232);
+}
+
+.left-event span {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: white;
+    width: 100%;
+    background-color: rgb(90, 140, 232);
+    padding: 4px 0;
+}
+
+.locate {
+    width: 13px;
+    position: absolute;
+    left: 87px;
+}
+
+.side-bar-ads {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.online-list {
+    display: flex;
+}
+
+.online-list .online img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.online-list-container p {
+    position: absolute;
+    right: -132px;
+    top: 9px;
+}
+
+.online .sus {
+    position: absolute;
+    right: -151px;
+}
+
+.online .ans {
+    position: absolute;
+    right: -117px;
+}
+
+.online {
+    top: unset;
+    bottom: 0;
+}
+
+.story-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 6px;
+}
+
+.story {
+    flex-basis: 18%;
+    padding-top: 32%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.story img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    left: 10px;
+    top: 10px;
+    border: 3px solid rgb(90, 140, 232);
+}
+
+.story p {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.story1 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-1.png);
+}
+
+.story2 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-2.png);
+}
+
+.story3 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-3.png);
+}
+
+.story4 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-4.png);
+}
+
+.story5 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(images/status-5.png);
+}
+
+.story.story1 img {
+    top: unset;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border: 0;
+    width: 35px;
+}
+
+.write-post-container {
+    width: 100%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+}
+
+.user-prifile {
+    display: flex;
+    align-items: center;
+}
+
+.user-prifile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-prifile p {
+    margin-bottom: -5px;
+    color: #626262;
+    font-weight: 500;
+}
+
+.user-prifile small {
+    font-size: 12px;
+}
+
+.post-input-container {
+    padding-left: 54px;
+    padding-top: 24px;
+}
+
+textarea {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    resize: none;
+}
+
+.add-post-link {
+    display: flex;
+    margin-top: 10px;
+}
+
+.add-post-link a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+.add-post-link a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.post-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    color: #626262;
+    margin: 20px 0;
+}
+
+.user-prifile span {
+    font-size: 13px;
+    color: #9a9a9a;
+}
+
+.post-text {
+    color: #9a9a9a;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.post-text span {
+    color: #626262;
+    font-weight: 500;
+}
+
+.post-text a {
+    text-decoration: none;
+    color: rgb(90, 140, 232);
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.post-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity-icons div img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.activity-icons div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.post-profile-icons {
+    display: flex;
+    align-items: center;
+}
+
+.post-profile-icons img {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.load-more-button {
+    color: #626262;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    padding: 2px 7px;
+    background: transparent;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.load-more-button button {
+    border: none;
+    border: 1px solid #555;
+}
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #626262;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+
+/*********** MISSING IMAGES FROM FONTAWESOME.COM ***********/
+
+.down-arrow img {
+    width: 12px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 2px;
+}
+
+.three-dot img {
+    width: 10px;
+    position: absolute;
+    margin-top: -12px;
+    margin-left: 440px;
+    cursor: pointer;
+}

@@ -1,0 +1,127 @@
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        .box .list .imgbox img {
+            width: 75px;
+            height: 100px;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #fcfcfc;
+        }
+        
+        .box {
+            position: relative;
+            min-width: 425px;
+            background-color: #00bcd4;
+            padding: 29px;
+            box-shadow: 0 35px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: calc(100% - 80px);
+            background-color: #fff;
+            border-left: 5px solid rgb(234, 230, 230);
+        }
+        
+        .box .list {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        
+        .box h3 {
+            position: relative;
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-left: 70px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .box .list::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #00bcd4;
+            transition: transform 0.5s;
+            transform: scaleX(0);
+            transform-origin: right;
+        }
+        
+        .box .list:hover::before {
+            transform-origin: left;
+            transition: transform 0.5s;
+            transform: scaleX(1);
+        }
+        
+        .box .list .imgbox {
+            position: relative;
+            border: 6px solid #fff;
+            overflow: hidden;
+            width: 80px;
+            height: 80px;
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+        
+        .box .list .imgbox img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .box .list .content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            color: #333;
+        }
+        
+        .box .list .content .rank {
+            position: absolute;
+            right: 0;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+        }
+        
+        .box .list .content .rank small {
+            font-weight: 500;
+            opacity: 0.2;
+            margin-right: 5px;
+        }
+        
+        h4 {
+            position: relative;
+            font-weight: 700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+        }
+        
+        p {
+            font-weight: 500;
+            opacity: 0.3;
+            padding-top: 6px;
+        }

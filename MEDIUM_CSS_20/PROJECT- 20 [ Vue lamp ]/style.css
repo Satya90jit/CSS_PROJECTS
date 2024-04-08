@@ -1,0 +1,157 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 10px 5%;
+    background-color: #1d2026;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 5px 2%;
+}
+
+nav .menu-img {
+    width: 25px;
+    margin-right: 20px;
+}
+
+nav .logo {
+    width: 155px;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button span {
+    display: block;
+    background-color: #999;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
+}
+
+.lamp-container {
+    position: absolute;
+    top: -22px;
+    left: 22%;
+    width: 200px;
+}
+
+.lamp-container .lamp {
+    width: 100%;
+}
+
+.lamp-container .light {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -10px;
+    width: 700px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.text-container {
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+
+.text-container h1 {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.text-container a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    margin-top: 35px;
+    padding: 4px 34px;
+    background: #00986f;
+    border-radius: 30px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.text-container p {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.control .line {
+    width: 250px;
+    height: 8px;
+    background-color: #fff;
+    margin: 0 20px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: -18px;
+}
+
+.control .line span {
+    width: 50%;
+    border-radius: 4px;
+    height: 8px;
+    background-color: #00986F;
+    display: block;
+    border-radius: 12px;
+}
+
+.active {
+    background: #14eab1;
+}
+
+.active span {
+    background: #fff;
+    margin-left: 31px;
+}
+
+.light.on {
+    opacity: 1;
+}

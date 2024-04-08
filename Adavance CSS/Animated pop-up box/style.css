@@ -1,0 +1,96 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #19242a;
+}
+
+.container {
+    position: relative;
+    height: 0px;
+    width: 0px;
+    background-color: #374446;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.container.active {
+    height: 450px;
+    width: 450px;
+    transition-delay: 0.5s;
+}
+
+.container::before {
+    content: '';
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: #374446;
+    position: absolute;
+    bottom: -15px;
+    transform: rotate(-45deg);
+}
+
+.container.active::before {
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+
+.toggleBtn {
+    position: absolute;
+    bottom: -40px;
+    height: 70px;
+    width: 70px;
+    background-color: #0bcf9c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggleBtn::before {
+    content: "+";
+    font-size: 33px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container.active .toggleBtn {
+    bottom: -110px;
+    transform: rotate(-135deg);
+    background-color: rgb(202, 15, 15);
+    transition: 1s;
+}
+
+.container .content {
+    min-width: 500px;
+    padding: 40px;
+    color: #fff;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.container .content h2 {
+    color: red;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.container.active .content {
+    opacity: 1;
+    transition-delay: 0.5s;
+    transform: scale(1);
+}

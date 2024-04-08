@@ -1,0 +1,80 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient( rgb(16, 215, 230), #df978a);
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 105px;
+    position: absolute;
+    top: 13%;
+    left: 11%;
+}
+
+.text {
+    width: 25%;
+    position: absolute;
+    top: 23%;
+    left: 15%;
+}
+
+.box {
+    width: 80%;
+    height: 80vh;
+    background-color: rgb(247, 243, 31);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.shoe {
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    width: 550px;
+}
+
+.box ul {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    right: 12%;
+}
+
+.box ul li {
+    list-style: none;
+    padding: 25px;
+    font-size: 13px;
+}
+
+.box ul li a {
+    color: rgb(42, 30, 4);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.box ul li a:hover {
+    border: 2px solid rgb(184, 182, 182);
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.box h1 {
+    font-size: 73px;
+    margin-left: 23px;
+    font-family: 'poppins';
+    opacity: 0.7;
+}

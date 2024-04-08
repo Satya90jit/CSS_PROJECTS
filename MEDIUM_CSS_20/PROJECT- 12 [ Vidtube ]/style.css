@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img {
+    cursor: pointer;
+}
+
+
+/* <!----------------------------- NAV-BAR ----------------------------> */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+}
+
+.nav-right img {
+    width: 25px;
+    margin-right: 25px;
+}
+
+.nav-right .user-icon {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0px;
+}
+
+.nav-left .menu {
+    width: 22px;
+    margin-right: 25px;
+}
+
+.nav-left .logo {
+    width: 130px;
+}
+
+.nav-middle .mic-icon {
+    width: 16px;
+}
+
+.nav-middle .search-box {
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.nav-middle .search-box input {
+    width: 400px;
+    height: 20px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.nav-middle .search-box img {
+    width: 13px;
+}
+
+
+/* <!----------------------------- SIDE-BAR ----------------------------> */
+
+.side-bar {
+    background-color: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+
+.shortcut-links a img {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.shortcut-links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.shortcut-links a :first-child {
+    color: #ed3833;
+}
+
+.side-bar hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    width: 85%;
+    margin-top: 20px;
+}
+
+.subscribed-list h3 {
+    font-size: 17px;
+    font-family: 'poppins';
+    margin: 20px 0px;
+    color: #5a5a5a;
+}
+
+.subscribed-list a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.subscribed-list a img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+/* ---------------------[ SMALL- SIDE-BAR ]------------------------- */
+
+.small-sidebar {
+    width: 5%;
+}
+
+.small-sidebar a p {
+    display: none;
+}
+
+.small-sidebar h3 {
+    display: none;
+}
+
+.small-sidebar hr {
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+
+/* -----------------------------MAIN-CONTENT------------------------------------ */
+
+.container {
+    background-color: #f9f9f9;
+    padding: 20px 2% 20px 17%;
+}
+
+.banner {
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.banner img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vid-list {
+    /* width: 300px; */
+    flex-basis: 24%;
+    margin: 15px 0px;
+}
+
+
+/* .list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+} */
+
+.vid-list .thumbnail {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.vid-list .flex {
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.vid-list .flex img {
+    width: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.vid-info {
+    color: #5a5a5a;
+    font-size: 13px;
+}
+
+.vid-inf a {
+    color: black;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+footer button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    border: 1px solid #555;
+    margin: 20px 0px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}

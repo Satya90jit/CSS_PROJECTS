@@ -1,0 +1,239 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/banner.png);
+    background-size: cover;
+    padding: 5px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav .logo {
+    width: 140px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 15px;
+    font-size: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav button {
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: black;
+    border: none;
+    font-size: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.container {
+    padding: 0 7%;
+}
+
+.header h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 4vw;
+    padding-top: 22%;
+}
+
+.search-box {
+    background-color: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-box form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box form input {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-box form button {
+    background: #ff5361;
+    width: 45px;
+    height: 45px;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+}
+
+.search-box form button img {
+    width: 15px;
+    padding-top: 5px;
+}
+
+.search-box form .locate-input {
+    flex: 1;
+}
+
+
+/* --------------------------------- [ EXCLUSSIVE ]----------------------------------- */
+
+.container {
+    padding: 7px 4%;
+}
+
+.container h3 {
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.exclussive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclussive div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.exclussive div {
+    position: relative;
+}
+
+.exclussive div span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffff;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.Trending-Places {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.Trending-Places div h3 {
+    font-size: 15px;
+    padding-left: 12px;
+    font-weight: 500;
+}
+
+.Trending-Places div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* <!---------------------------------- CALL TO ACTION -----------------------------------> */
+
+.cta {
+    margin: 60px 0px 40px 0px;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 40px;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(images/banner-2.png);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.cta button {
+    padding: 3px 15px;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    background-color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cta button:hover {
+    background: transparent;
+    color: #fff;
+    border: 0.5px solid #ffff;
+}
+
+
+/* <!---------------------------------- [ TRENDING STORIES ] -----------------------------------> */
+
+.Trending-stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.Trending-stories div img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Trending-stories div {
+    position: relative;
+    text-align: center;
+}
+
+.Trending-stories div p {
+    position: absolute;
+    top: 50%;
+    padding: 0px 20px;
+    color: #fff;
+}
+
+.Trending-stories .btn {
+    width: 80%;
+    background-color: #ff5361;
+    padding: 15px;
+    max-width: 350px;
+    margin: 60px 200px;
+    color: #fff;
+    border-radius: 25px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+}
+
+.Trending-stories button {
+    display: block;
+}
+
+.Trending-stories .bottom-text {
+    padding: 10px 5%;
+    width: 90vw;
+    justify-content: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Website using html and css by easy tutorial </title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="media/logo.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">SPECIFICATION</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="left-col">
+                <h1>THE <br> REAL <br> SOUND</h1>
+            </div>
+            <div class="right-col">
+                <p>Click Here To Listen </p>
+                <img src="media/play.png" id="icon">
+            </div>
+        </div>
+
+    </div>
+
+    <audio id="mySongs">
+        <source src="media/Syn Cole - Time [NCS Release].mp3" type="audio/mp3">
+    </audio>
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <!-- <script>
+        var mySongs = document.getElementById("mySongs");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            if (mySongs.paused) {
+                mySongs.play();
+                icon.src = "media/pause.png";
+            } else {
+                mySongs.pause();
+                icon.src = "media/play.png";
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>

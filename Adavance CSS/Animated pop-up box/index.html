@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Pop Up Box Using Html Css And Javascript By Onine Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>Heading...</h2> <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum dicta maiores libero iure vitae dolorem cumque a praesentium corporis quas, voluptates, ipsa ad rerum laborum at voluptatum enim? Quam, consectetur.</p>
+        </div>
+        <div class="toggleBtn"></div>
+    </div>
+
+    <script>
+        console.log('hello world')
+        let toggleBtn = document.querySelector('.toggleBtn')
+        let container = document.querySelector('.container')
+        toggleBtn.onclick = function() {
+            container.classList.toggle('active');
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

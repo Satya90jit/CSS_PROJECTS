@@ -1,0 +1,152 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #3586ff;
+    height: auto;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 2px solid #3586ff;
+}
+
+footer .social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icon li a {
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+    transition: 0.5s;
+    margin: 0 10px;
+}
+
+footer .social-icon li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .menu li {
+    margin: 5px 10px;
+    margin-top: -15px;
+    font-size: 20px;
+}
+
+footer .menu li a {
+    color: #fff;
+    display: inline-block;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('wave.png');
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animatewave2 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 999;
+    opacity: 0.2;
+    bottom: 10px;
+    animation: animatewave3 4s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 996;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animatewave4 4s linear infinite;
+}
+
+@keyframes animatewave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animatewave2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animatewave3 {
+    0% {
+        background-position-x: 300px;
+    }
+    100% {
+        background-position-x: 700px;
+    }
+}
+
+@keyframes animatewave4 {
+    0% {
+        background-position-x: 650px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}

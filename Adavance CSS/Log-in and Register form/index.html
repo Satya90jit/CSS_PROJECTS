@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Log In And Register Page Using Html And Css </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" id="logIn-icon" class="toggle-btn" onclick="login()">Log in </button>
+                <button type="button" id="register-icon" class="toggle-btn" onclick="register()">Register</button>
+
+            </div>
+            <div class="social-links">
+                <img src="images/fb.png">
+                <img src="images/gp.png">
+                <img src="images/tw.png">
+            </div>
+            <form id="log-in" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id">
+                <input type="password" class="input-field" placeholder=" Enter Password">
+                <input type="checkbox" class="check-box"> <span>Remember Password</span>
+                <button type="submit" class="submit">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="email" class="input-field" placeholder=" Email Id">
+                <input type="password" class="input-field" placeholder=" Enter Password">
+                <input type="checkbox" class="check-box"> <span>I Agree To The Terms And Conditions</span>
+                <button type="submit" class="submit">Register</button>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
